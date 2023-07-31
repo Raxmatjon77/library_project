@@ -23,7 +23,7 @@ urlpatterns = [
     path('api/v1/',include("books.urls")),
 
     #swagger
-    path('swagger/',scheme_view.with_ui(
+    path('',scheme_view.with_ui(
         'swagger',cache_timeout=0), name='swagger-swagger-ui'),
    # redoc
     path('redoc/',scheme_view.with_ui(
